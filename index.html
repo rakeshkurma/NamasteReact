@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"> 
+
+     <div id="div-1">
+ <h1 id="Header-1"> Hello</h1>
+ <h2 id="h2">Hi </h2>
+     </div>    
+
+    </div>
+  
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+    const Heading=React.createElement("h1",{id:"Header-1" , style: { color: "blue", fontSize: "24px" }  },"Hello React Js");
+
+    const Heading2=React.createElement("h2",{id:"h2"},"Hello THis is H2");
+ 
+    const Div=React.createElement("div",{id:"div-1"},[Heading,Heading2]);
+
+
+    ReactDOM.render(Div, document.getElementById("root"));
+
+    // const root=ReactDOM.createRoot();
+
+    // root.render(Div);
+
+</script>
+
+
+
+</body>
+
+<!-- <script>
+
+const Heading=document.createElement("h1");
+
+Heading.innerHTML="Hello EveryOne";
+
+const root=document.getElementById("root");
+
+root.appendChild(Heading);
+
+</script> -->
+
+</html>
